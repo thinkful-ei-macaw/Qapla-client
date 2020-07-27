@@ -1,16 +1,92 @@
 body {
-    background-image: url("../../qapla.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
+    background-color: black;
 }
 
+/* font-family: 'Merienda One', cursive;
+font-family: 'Metal Mania', cursive;
+font-family: 'Mogra', cursive; */
+
 .App {
+    color: #FF6500;
+    font-family: 'Merienda One', cursive;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+a {
+    color: #FF6500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+@media only screen and (min-width: 320px) {
+    body {
+        background-image: url("../../qapla-seven.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    body {
+        background-image: url("../../qapla-six.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    body {
+        background-image: url("../../qapla-five.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url("../../qapla-four.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-image: url("../../qapla-three.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url("../../qapla-two.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
