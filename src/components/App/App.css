@@ -26,7 +26,8 @@ font-family: 'Mogra', cursive; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.65);
+    padding-bottom: 3vh;
 }
 
 .log-route-section {
@@ -35,7 +36,7 @@ font-family: 'Mogra', cursive; */
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.65);
 }
 
 .reg-log-header {
@@ -46,12 +47,16 @@ input[type=text] {
     background: none;
     border: none;
     border-bottom: 2px solid #FF6500;
+    outline: none;
+    color: #FF6500;
 }
 
 input[type=password] {
     background: none;
     border: none;
     border-bottom: 2px solid #FF6500;
+    outline: none;
+    color: #FF6500;
 }
 
 .label-input {
