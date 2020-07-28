@@ -1,5 +1,9 @@
 body {
     background-color: black;
+    background-image: url("../../qapla-seven.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 /* font-family: 'Merienda One', cursive;
@@ -9,21 +13,57 @@ font-family: 'Mogra', cursive; */
 .App {
     color: #FF6500;
     font-family: 'Merienda One', cursive;
+    text-shadow: black 0px 0px 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-section {
+.reg-route-section {
     padding-left: 5vw;
     padding-right: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.log-route-section {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.reg-log-header {
+    font-size: 35px;
+}
+
+input[type=text] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #FF6500;
+}
+
+input[type=password] {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #FF6500;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
 }
 
 a {
     color: #FF6500;
     text-decoration: none;
     cursor: pointer;
+    transition: font-size .05s ease-out .1s
 }
 
 a:link {
@@ -32,19 +72,29 @@ a:link {
 }
 
 a:hover {
+    color: #db3300;
     text-decoration: none;
     cursor: pointer;
     font-size: larger;
 }
 
-@media only screen and (min-width: 320px) {
-    body {
-        background-image: url("../../qapla-seven.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-    }
+button {
+    font-family: 'Merienda One', cursive;
+    background: none;
+    color: white;
+    border: 2px solid #FF6500;
+    cursor: pointer;
+    transition: font-size .05s ease-out .1s
 }
+
+button:hover {
+    font-family: 'Merienda One', cursive;
+    background: none;
+    color: #db3300;
+    border: 2px solid #db3300;
+    font-size: larger;
+}
+
 
 @media only screen and (min-width: 375px) {
     body {

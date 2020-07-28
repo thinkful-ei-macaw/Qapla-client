@@ -17,8 +17,8 @@ class LoginRoute extends Component {
 
   render() {
     return (
-      <section>
-        <h2>Login</h2>
+      <section className='log-route-section'>
+        <h2 className='reg-log-header'>Login</h2>
         <LoginForm
           onLoginSuccess={this.handleLoginSuccess}
         />

@@ -15,11 +15,11 @@ class RegistrationRoute extends Component {
 
   render() {
     return (
-      <section>
+      <section className='reg-route-section'>
+        <h2 className='reg-log-header'>Sign up</h2>
         <p>
           Utilize spaced reptition to master the bold, relentless language of the Klingon.
         </p>
-        <h2>Sign up</h2>
         <RegistrationForm
           onRegistrationSuccess={this.handleRegistrationSuccess}
         />
