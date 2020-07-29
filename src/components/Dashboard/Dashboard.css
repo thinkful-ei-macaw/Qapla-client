@@ -1,0 +1,21 @@
+.link-button {
+    font-family: 'Merienda One', cursive;
+    background: none;
+    color: white;
+    border: 2px solid #FF6500;
+    cursor: pointer;
+}
+
+.link-button:hover {
+    font-family: 'Merienda One', cursive;
+    background: none;
+    color: #db3300;
+    border: 2px solid #db3300;
+}
+
+.dash-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem;
+}

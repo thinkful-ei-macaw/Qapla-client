@@ -10,3 +10,9 @@
     justify-content: space-between;
     padding-bottom: 10vh;
 }
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4vh;
+}

@@ -17,7 +17,7 @@ class RegistrationRoute extends Component {
     return (
       <section className='reg-route-section'>
         <h2 className='reg-log-header'>Sign up</h2>
-        <p>
+        <p className='welcome-text'>
           Utilize spaced reptition to master the bold, relentless language of the Klingon.
         </p>
         <RegistrationForm

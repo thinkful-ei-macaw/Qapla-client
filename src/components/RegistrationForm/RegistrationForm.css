@@ -9,3 +9,8 @@
 .reg-footer a {
     color: white;
 }
+
+.welcome-text {
+    padding-bottom: 3vh;
+    border-bottom: 2px solid #FF6500;
+}
