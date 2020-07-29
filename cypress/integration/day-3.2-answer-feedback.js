@@ -88,7 +88,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('.DisplayScore p')
             .should(
               'have.text',
-              `Your total score is: ${incorrectFixture.totalScore}`,
+              `Your total score is: ${incorrectFixture.total_score}`,
             )
           cy.get('h2')
             .should(
@@ -98,7 +98,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('.DisplayFeedback p')
             .should(
               'have.text',
-              `The correct translation for ${languageHeadFixture.nextWord} was ${incorrectFixture.answer} and you chose ${guess}!`,
+              `The correct translation for ${languageHeadFixture.next_word} was ${incorrectFixture.answer} and you chose ${guess}!`,
             )
           cy.get('button')
             .should(
@@ -142,7 +142,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('.DisplayScore p')
             .should(
               'have.text',
-              `Your total score is: ${incorrectFixture.totalScore}`,
+              `Your total score is: ${incorrectFixture.total_score}`,
             )
           cy.get('h2')
             .should(
@@ -152,7 +152,7 @@ describe(`User story: Answer feedback`, function() {
           cy.get('.DisplayFeedback p')
             .should(
               'have.text',
-              `The correct translation for ${languageHeadFixture.nextWord} was ${incorrectFixture.answer} and you chose ${guess}!`,
+              `The correct translation for ${languageHeadFixture.next_word} was ${incorrectFixture.answer} and you chose ${guess}!`,
             )
           cy.get('button')
             .should(

@@ -62,13 +62,13 @@ describe(`User story: User's dashboard`, function() {
           cy.root()
             .should(
               'contain',
-              `correct answer count: ${word.correct_count}`
+              `correct answer count: ${word.word_correct}`
             )
 
           cy.root()
             .should(
               'contain',
-              `incorrect answer count: ${word.incorrect_count}`
+              `incorrect answer count: ${word.word_incorrect}`
             )
         })
       })

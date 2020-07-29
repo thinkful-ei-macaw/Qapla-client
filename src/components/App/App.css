@@ -21,12 +21,13 @@ font-family: 'Mogra', cursive; */
 }
 
 .sub-title {
-    margin: 0;
+    margin: .5vh;
+    border-bottom: 2px solid #FF6500;
 }
 
 section {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -44,6 +45,8 @@ input[type=text] {
     border-bottom: 2px solid #FF6500;
     outline: none;
     color: #FF6500;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 input[type=password] {
@@ -52,6 +55,8 @@ input[type=password] {
     border-bottom: 2px solid #FF6500;
     outline: none;
     color: #FF6500;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .label-input {
@@ -80,6 +85,7 @@ a:hover {
 
 .solo-button {
     font-family: 'Merienda One', cursive;
+    width: fit-content;
     background: none;
     color: white;
     border: 2px solid #FF6500;

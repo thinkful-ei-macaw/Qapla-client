@@ -1,8 +1,8 @@
 {
-  "nextWord": "test-next-word-from-correct-guess",
-  "wordCorrectCount": 111,
-  "wordIncorrectCount": 222,
-  "totalScore": 333,
+  "next_word": "test-next-word-from-correct-guess",
+  "word_correct": 111,
+  "word_incorrect": 222,
+  "total_score": 333,
   "answer": "test-answer-from-correct-guess",
   "isCorrect": true
 }

@@ -12,8 +12,8 @@
       "original": "original 1",
       "translation": "translation 1",
       "memory_value": 0,
-      "incorrect_count": 0,
-      "correct_count": 0,
+      "word_incorrect": 0,
+      "word_correct": 0,
       "language_id": 1,
       "next": 2
     },
@@ -22,8 +22,8 @@
       "original": "original 2",
       "translation": "translation 2",
       "memory_value": 0,
-      "incorrect_count": 0,
-      "correct_count": 2,
+      "word_incorrect": 0,
+      "word_correct": 2,
       "language_id": 1,
       "next": 3
     },
@@ -32,8 +32,8 @@
       "original": "original 3",
       "translation": "translation 3",
       "memory_value": 0,
-      "incorrect_count": 3,
-      "correct_count": 6,
+      "word_incorrect": 3,
+      "word_correct": 6,
       "language_id": 1,
       "next": 4
     },
@@ -42,8 +42,8 @@
       "original": "original 4",
       "translation": "translation 4",
       "memory_value": 0,
-      "incorrect_count": 2,
-      "correct_count": 6,
+      "word_incorrect": 2,
+      "word_correct": 6,
       "language_id": 1,
       "next": 5
     },
@@ -52,8 +52,8 @@
       "original": "original 5",
       "translation": "translation 5",
       "memory_value": 0,
-      "incorrect_count": 0,
-      "correct_count": 9,
+      "word_incorrect": 0,
+      "word_correct": 9,
       "language_id": 1,
       "next": null
     }

@@ -34,12 +34,12 @@ describe(`User story: Presented with word`, function() {
           cy.get('h2')
             .should('have.text', 'Translate the word:')
             .siblings('span')
-            .should('have.text', languageHeadFixture.nextWord)
+            .should('have.text', languageHeadFixture.next_word)
         })
         cy.get('p').eq(0)
           .should(
             'have.text',
-            `Your total score is: ${languageHeadFixture.totalScore}`,
+            `Your total score is: ${languageHeadFixture.total_score}`,
           )
       })
   })
@@ -72,11 +72,11 @@ describe(`User story: Presented with word`, function() {
         cy.root()
           .should(
             'contain',
-            `You have answered this word correctly ${languageHeadFixture.wordCorrectCount} times.`,
+            `You have answered this word correctly ${languageHeadFixture.word_correct} times.`,
           )
           .and(
             'contain',
-            `You have answered this word incorrectly ${languageHeadFixture.wordIncorrectCount} times.`,
+            `You have answered this word incorrectly ${languageHeadFixture.word_incorrect} times.`,
           )
       })
     })
