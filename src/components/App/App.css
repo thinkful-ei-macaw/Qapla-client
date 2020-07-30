@@ -68,7 +68,6 @@ a {
     color: #FF6500;
     text-decoration: none;
     cursor: pointer;
-    transition: font-size .05s ease-out .1s
 }
 
 a:link {
@@ -80,7 +79,6 @@ a:hover {
     color: #db3300;
     text-decoration: none;
     cursor: pointer;
-    font-size: larger;
 }
 
 .solo-button {
@@ -90,7 +88,6 @@ a:hover {
     color: white;
     border: 2px solid #FF6500;
     cursor: pointer;
-    transition: font-size .05s ease-out .1s
 }
 
 .solo-button:hover {
@@ -98,7 +95,6 @@ a:hover {
     background: none;
     color: #db3300;
     border: 2px solid #db3300;
-    font-size: larger;
 }
 
 

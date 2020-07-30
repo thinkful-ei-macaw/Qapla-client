@@ -27,9 +27,14 @@
     padding: 0;
 }
 
-.scores {
+.word-results {
     display: flex;
     flex-direction: row;
+    color: white;
+}
+
+.total-score {
+    color: white;
 }
 
 .single-word {

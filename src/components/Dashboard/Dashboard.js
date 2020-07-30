@@ -11,7 +11,9 @@ class Dashboard extends Component {
         const { language, words} = this.context
         return (
             <div className='dash-wrapper'>
-                <p>Total Correct Answers: {language.total_score}</p>
+                <h2>{language.name}</h2>
+                <h3 className='sub-title'>the Warrior's Tongue</h3>
+                <p className='total-score'>Total correct answers: {language.total_score}</p>
                 <Link to='/learn'>
                     <Button className='link-button' type='button'>Start your training</Button>
                 </Link>
@@ -22,7 +24,7 @@ class Dashboard extends Component {
                     }) => (
                         <li key={id} className='single-word'>
                             <h4 className='count'>{original}</h4>
-                            <div className='scores'>
+                            <div className='word-results'>
                                 <span className='count'>Correct: {word_correct}</span>
                                 <span className='count'>Incorrect: {word_incorrect}</span>
                             </div>

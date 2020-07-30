@@ -33,10 +33,12 @@ class Learning extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        const guess = this.guess.current.value
+        const guess = this.guess.current.value;
+        console.log(this.guess.current.value);
 
         LangApiService.postGuess(guess)
             .then(data => {
+                console.log('did this reach?')
                 this.setState({
                     word: data.next_word,
                     evaluation: {
@@ -59,6 +61,7 @@ class Learning extends Component {
 
     render() {
         const { evaluation } = this.state;
+        console.log('render')
         return(
             <div className='learn-wrapper'>
                 {!evaluation
@@ -68,7 +71,7 @@ class Learning extends Component {
                             <p>{this.state.word}</p>
                             <form className='learning-form' onSubmit={this.handleSubmit}>
                                 <Label htmlFor='guess'>What is the meaning of this?</Label>
-                                <Input id='guess' autoComplete='off' name='guess' placeholder='Use capitalization' ref={this.guess} required />
+                                <Input id='guess' autoComplete='off' name='guess' placeholder='Translate' ref={this.guess} required />
                                 <Button className='solo-button' type='submit'>Answer</Button> 
                             </form>
 
@@ -84,7 +87,14 @@ class Learning extends Component {
                         </div>
                     )
                     : (
-                        <div> placeholder </div>
+                        <div className='eval-content'>
+                            <h3>{evaluation.isCorrect ? 'Correct!' : 'Incorrect, try again!'}</h3>
+                            <div className='eval-details'>
+                                <span>Correct translation of {evaluation.original} is {evaluation.answer} and you said {evaluation.guess}.</span>
+                                <h4>Total score is currently: {evaluation.total_score}</h4>
+                            </div>
+                            <Button className='solo-button' type='click' onClick={this.clearEval}>Next Word</Button>
+                        </div>
                     )
                 }
             </div>
