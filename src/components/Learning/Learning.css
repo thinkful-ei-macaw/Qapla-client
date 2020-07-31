@@ -1,6 +1,7 @@
 .learning-details {
     display: flex;
     flex-direction: column;
+    padding-top: 2vh;
 }
 
 .learning-content {
@@ -12,5 +13,28 @@
 .input-guide {
     font-size: 10px;
     margin: 0;
+    color: white;
+}
+
+.learning-form {
+    margin: 1rem;
+}
+
+.counter {
+    color: white;
+}
+
+.eval-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eval-details {
+    padding: 1rem;
+}
+
+.total {
+    padding-top: 4vh;
     color: white;
 }

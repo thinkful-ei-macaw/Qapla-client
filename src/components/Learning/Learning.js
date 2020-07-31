@@ -67,18 +67,18 @@ class Learning extends Component {
                 {!evaluation
                     ? (
                         <div className='learning-content'>
-                            <h3 className='sub-title'>Translate!</h3>
-                            <p>{this.state.word}</p>
+                            <h2 >Translate the word:</h2>
+                            <span>{this.state.word}</span>
                             <form className='learning-form' onSubmit={this.handleSubmit}>
-                                <Label htmlFor='guess'>What is the meaning of this?</Label>
-                                <Input id='guess' autoComplete='off' name='guess' placeholder='Translate' ref={this.guess} required />
-                                <Button className='solo-button' type='submit'>Answer</Button> 
+                                <Label htmlFor='learn-guess-input'>What's the translation for this word?</Label>
+                                <Input id='learn-guess-input' autoComplete='off' name='guess' placeholder='Translate' ref={this.guess} required />
+                                <Button className='solo-button' type='submit'>Submit your answer</Button> 
                             </form>
 
                             <div className='learning-details'>
-                                <h4>Total Correct: {this.state.total_score}</h4>
-                                <p>Correct translations on this word: {this.state.word_correct}</p>
-                                <p>Incorrect translations on this word: {this.state.word_incorrect}</p>
+                                <p className='counter'>Your total score is: {this.state.total_score}</p>
+                                <p>You have answered this word correctly {this.state.word_correct} times.</p>
+                                <p>You have answered this word incorrectly {this.state.word_incorrect} times.</p>
                             </div>
 
                             <Link to='/'>
@@ -88,12 +88,14 @@ class Learning extends Component {
                     )
                     : (
                         <div className='eval-content'>
-                            <h3>{evaluation.isCorrect ? 'Correct!' : 'Incorrect, try again!'}</h3>
-                            <div className='eval-details'>
-                                <span>Correct translation of {evaluation.original} is {evaluation.answer} and you said {evaluation.guess}.</span>
-                                <h4>Total score is currently: {evaluation.total_score}</h4>
+                            <h2>{evaluation.isCorrect ? 'You were correct! :D' : 'Good try, but not quite right :('}</h2>
+                            <div className='DisplayFeedback'>
+                                <p>The correct translation for {evaluation.original} was {evaluation.answer} and you chose {evaluation.guess}!</p>
                             </div>
-                            <Button className='solo-button' type='click' onClick={this.clearEval}>Next Word</Button>
+                            <div className='DisplayScore'>
+                                <p className='total'>Your total score is: {evaluation.total_score}</p>
+                            </div>
+                            <Button className='solo-button' type='click' onClick={this.clearEval}>Try another word!</Button>
                         </div>
                     )
                 }

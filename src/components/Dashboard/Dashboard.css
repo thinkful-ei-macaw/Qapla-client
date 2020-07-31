@@ -29,7 +29,7 @@
 
 .word-results {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
 }
 
@@ -38,8 +38,8 @@
 }
 
 .single-word {
-    flex: 1 1 200px;
-    flex: 0 1 200px;
+    flex: 1 1 150px;
+    flex: 0 1 150px;
     list-style-type: none;
     margin: 8px;
 }
