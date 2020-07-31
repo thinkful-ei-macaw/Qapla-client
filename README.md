@@ -1,4 +1,29 @@
-# Spaced Repetition Capstone
+# Qapla! Capstone
+
+## Technology
+
+* React
+* NodeJS
+* PostgreSQL
+* Express
+* Knex
+* Cypress
+
+## Screenshots
+
+![screenshot of signup page](../public/screenshots/sign-up.png?raw=true)
+
+
+![screenshot of login page](../public/screenshots/login.png?raw=true)
+
+
+![screenshot of dashboard page](../public/screenshots/dash.png?raw=true)
+
+
+![screenshot of learning page](../public/screenshots/learning.png?raw=true)
+
+
+![screenshot of learning-eval page](../public/screenshots/learning-eval.png?raw=true)
 
 ## Setup
 
@@ -9,7 +34,7 @@ To setup the application
 
 The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+Find instructions to setup the API here https://github.com/thinkful-ei-macaw/Qapla-server.
 
 ## Running project
 
@@ -45,3 +70,6 @@ npm run cypress:run
 ```
 
 This will save video recordings of the test runs in the directory `./cypress/videos/`.
+
+
+### Special Thanks to the Klingon Language Institute
