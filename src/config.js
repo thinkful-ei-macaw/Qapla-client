@@ -1,4 +1,4 @@
 export default {
-  API_ENDPOINT: process.env.REACT_APP_API_ENDPOINT,
+  API_ENDPOINT: `https://immense-depths-57508.herokuapp.com`,
   TOKEN_KEY: process.env.REACT_APP_TOKEN_KEY,
 }
