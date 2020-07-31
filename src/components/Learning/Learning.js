@@ -18,7 +18,6 @@ class Learning extends Component {
     componentDidMount() {
         LangApiService.getHead()
             .then(data => {
-                console.log(data)
                 this.setState({
                     word: data.next_word,
                     total_score: data.total_score,
@@ -34,11 +33,9 @@ class Learning extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         const guess = this.guess.current.value;
-        console.log(this.guess.current.value);
 
         LangApiService.postGuess(guess)
             .then(data => {
-                console.log('did this reach?')
                 this.setState({
                     word: data.next_word,
                     evaluation: {
@@ -61,7 +58,6 @@ class Learning extends Component {
 
     render() {
         const { evaluation } = this.state;
-        console.log('render')
         return(
             <div className='learn-wrapper'>
                 {!evaluation
